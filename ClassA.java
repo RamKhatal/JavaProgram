@@ -1,45 +1,41 @@
-package Rrk;
+package pkg1;
 
-import java.util.Scanner;
-// Armstrong no using while loop
+import java.util.Arrays;
 
 public class ClassA {
 
 	public static void main(String[] args) {
-		int num,temp,totalDigit=0,res=0,rem,pow,i;
+		// simple program of array
 		
-		Scanner scan =new Scanner(System.in);
-		
-		System.out.println("Enter the no:");
-		
-		num=scan.nextInt();
-		
-		temp=num;
-		while(num>0)
-		{
-			num=num/10;
-			totalDigit++;
-					
-		}
-   num = temp;
-      while(num>0)
-    {
-    	  rem=num%10;
-    	  pow=1;
-    	  i=0;
-    	  while(i<totalDigit)
-    	  {
-    		pow=pow*rem;
-    		i++;
-    	  }
-    	  res=res+pow;
-    	  num=num/10;
-	}
-      if(res==temp)
-    	  System.out.println("Armstong no");
-      else
-    	  System.out.println("not an Armstrong no");
-		
+		//     int
+		int []b=new int[3];
+		b[0]=10;
+		b[1]=20;
+		b[2]=30;
+       System.out.println(b[2]);
+      // int k=b.length;          using b.length
+       System.out.println(b.length);
+       
+       
+       //       new keyword String
+       
+       String[]c= {"ram","sham","ganu","shubhu"};
+       System.out.println(c[3]);
+       System.out.println(c.length);
+       System.out.println("============================");
+       
+       // using for loop
+       for(int i=0;i<c.length;i++)
+       {
+    	   System.out.print(c[i] +" ");
+    	  
+       }
+       System.out.println();
+       System.out.println("==============================");
+      
+       // using Arrays.toString()
+       
+       System.out.println(Arrays.toString(c));
 	}
 
 }

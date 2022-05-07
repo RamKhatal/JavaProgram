@@ -1,33 +1,53 @@
-package Rrk;
+package pkg1;
 
-import java.util.Scanner;
-
-// Armstrong no using while loop
-
+import java.util.Arrays;
+import java.util.Iterator;
 public class ClassB {
-	
 
-	public static void main(String[] args) {
-		int num,temp,res=0,rem;
-		Scanner scn = new Scanner(System.in);
-		System.out.println("Enter the num:");
-		num=scn.nextInt();
-		temp=num;
-//		for(int i=0;i<=9;i++)
-//		{
-//			for (int j=0;j<=9;j++)
+	public static void main(String[] args) 
+	{
+		int[]a= {889,426,589,123,5};
 		
-		while(temp!=0)
+		// Print lagest no.from given array
+		
+		
+		int maxnum=a[0];
+		
+		for(int i=1;i<(a.length);i++)
 		{
-			rem=temp%10;
-			res=res+(rem*rem*rem);
-			temp=temp/10;
+			if(maxnum<a[i])
+			{
+				maxnum=a[i];
+			}
+			
 		}
-//			}
-		if(num==res)
-		System.out.println("\nAmstrong number");
-		else
-			System.out.println("\nNot Amstrong number");
+	
+		System.out.println(maxnum);
+		
+		
+		
+		
+//*************************************************************
+		// Print smallest no.from given array
+	 int[]b= {889,426,589,123,5};
+		
+		// Print lagest no.from given array
+		
+		
+		int minino=b[0];
+		
+		for(int i=1;i<(b.length);i++)
+		{
+			if(minino>b[i])
+			{
+				minino=b[i];
+			}
+			
+		}
+	
+		System.out.println(minino);
+		
 		
 	}
+
 }
